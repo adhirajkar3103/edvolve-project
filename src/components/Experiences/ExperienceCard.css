@@ -1,0 +1,14 @@
+
+.cardInMed{
+    width: 12rem;
+}
+@media (max-width:992px){
+    .cardInMed{
+        width: 18rem;
+    }
+}
+@media (max-width:768px){
+    .cardInMed{
+        width: 15rem;
+    }
+}

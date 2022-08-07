@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Topbar from "./components/Topbar";
+import Hello from "./components/Hello";
+import MainBody from "./components/MainBody";
 
 function App() {
+  let userName = 'Adhiraj Kar'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Topbar user={userName}/>
+      <div className="ms-5 mt-3">
+      <Hello user={userName}/>
+      </div>
+      <MainBody />
+      
+    </>
   );
 }
 
